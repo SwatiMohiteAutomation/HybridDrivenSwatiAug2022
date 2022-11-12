@@ -15,14 +15,15 @@ import pages.LoginPage;
 
 public class LoginTest {
 
+	@Test
 	public void tc1() {
 		
 			System.out.println("STEP - Launch Chrome Browser & Hit url");
-			PredefinedActions.start("smohite-trials77.orangehrmlive.com");
+			PredefinedActions.start("https://smohite-trials77.orangehrmlive.com/");
 
 			System.out.println("STEP - Enter valid login credentials");
 			LoginPage loginPage = new LoginPage();
-			loginPage.login("admin", "YK3bM@lgD0");
+			loginPage.login("admin","YK3bM@lgD0");
 			
 
 			System.out.println("VERIFY - home page is displayed");
